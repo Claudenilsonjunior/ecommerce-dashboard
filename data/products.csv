@@ -1,0 +1,121 @@
+product_id,product_name,category,base_price,cost,launch_date,is_active,rating,review_count,supplier
+P0001,Wireless Earbuds Pro,Electronics,186.52,134.39,2023-04-17,True,4.3,126,SupplierC
+P0002,Smart Watch X2,Electronics,119.06,93.51,2023-04-27,True,4.5,774,SupplierD
+P0003,USB-C Hub 7-in-1,Electronics,299.03,244.6,2023-01-21,True,4.3,257,SupplierD
+P0004,Bluetooth Speaker Mini,Electronics,100.17,77.8,2023-06-19,False,5.0,194,SupplierB
+P0005,LED Desk Lamp,Electronics,287.42,235.58,2023-02-24,True,4.0,651,SupplierA
+P0006,Webcam HD 1080p,Electronics,205.19,173.23,2023-03-30,True,4.7,781,SupplierB
+P0007,Mechanical Keyboard,Electronics,118.5,89.55,2023-04-21,True,4.3,780,SupplierC
+P0008,Gaming Mouse,Electronics,137.1,108.91,2023-02-19,True,3.8,570,SupplierB
+P0009,Phone Stand Adjustable,Electronics,233.98,196.98,2023-05-26,True,4.9,1000,SupplierB
+P0010,Portable Charger 20k,Electronics,273.19,219.34,2023-02-09,True,4.5,883,SupplierA
+P0011,Screen Protector Kit,Electronics,238.66,171.5,2023-05-04,True,3.7,69,SupplierA
+P0012,Cable Organizer Set,Electronics,336.98,250.73,2023-05-16,False,4.7,597,SupplierD
+P0013,WiFi Extender,Electronics,273.62,203.62,2023-01-05,True,4.4,1056,SupplierC
+P0014,Smart Plug 4-Pack,Electronics,303.35,238.64,2023-02-02,False,3.8,809,SupplierC
+P0015,Dash Cam HD,Electronics,239.78,194.16,2023-02-04,True,3.4,647,SupplierA
+P0016,Fitness Tracker Band,Electronics,271.83,221.5,2023-05-22,True,4.1,1043,SupplierB
+P0017,Tablet Stand,Electronics,100.75,83.8,2023-03-04,True,4.1,1025,SupplierD
+P0018,Laptop Cooling Pad,Electronics,265.39,219.64,2023-05-23,True,3.6,1188,SupplierC
+P0019,RGB LED Strip,Electronics,165.69,136.65,2023-03-07,True,3.7,1017,SupplierB
+P0020,Solar Power Bank,Electronics,206.67,168.88,2023-03-25,True,4.2,194,SupplierA
+P0021,Classic Cotton Tee,Apparel,57.2,27.31,2023-05-01,True,4.7,714,SupplierD
+P0022,Running Shorts Pro,Apparel,80.02,41.96,2023-02-20,True,3.6,1141,SupplierB
+P0023,Yoga Pants Women,Apparel,118.14,45.7,2023-02-08,True,3.7,956,SupplierA
+P0024,Zip Hoodie Fleece,Apparel,56.74,21.72,2023-02-23,False,3.8,389,SupplierC
+P0025,Compression Socks,Apparel,92.79,47.42,2023-06-09,True,4.3,207,SupplierD
+P0026,Athletic Tank Top,Apparel,54.2,24.62,2023-01-24,True,5.0,986,SupplierC
+P0027,Cycling Jersey,Apparel,104.61,45.41,2023-05-04,True,4.5,664,SupplierD
+P0028,Trail Running Shoes,Apparel,92.52,60.99,2023-05-27,True,3.4,493,SupplierA
+P0029,Waterproof Jacket,Apparel,68.13,35.08,2023-04-14,True,3.8,477,SupplierB
+P0030,Casual Sneakers,Apparel,114.04,46.91,2023-04-09,True,3.5,628,SupplierA
+P0031,Sports Bra High Impact,Apparel,78.5,46.23,2023-05-09,True,4.8,1065,SupplierD
+P0032,Swim Trunks Quick-Dry,Apparel,88.64,50.2,2023-04-09,True,4.7,408,SupplierD
+P0033,Winter Gloves Touch,Apparel,68.73,28.07,2023-04-26,True,3.5,108,SupplierD
+P0034,Baseball Cap UV,Apparel,84.08,46.81,2023-04-09,True,3.7,882,SupplierB
+P0035,Thermal Base Layer,Apparel,75.8,40.54,2023-06-18,True,3.2,402,SupplierA
+P0036,Workout Leggings,Apparel,49.08,27.41,2023-05-16,True,4.4,1061,SupplierD
+P0037,Crew Neck Sweatshirt,Apparel,41.66,23.25,2023-04-29,True,4.3,234,SupplierA
+P0038,Ankle Socks 6-Pack,Apparel,75.9,30.59,2023-01-27,True,4.1,288,SupplierC
+P0039,Rain Poncho Foldable,Apparel,76.4,46.43,2023-03-02,True,4.2,1077,SupplierD
+P0040,Sun Hat Wide Brim,Apparel,48.93,19.24,2023-02-15,True,3.9,1065,SupplierD
+P0041,Neck Gaiter Multi,Apparel,62.31,31.45,2023-04-05,True,4.7,195,SupplierA
+P0042,Gym Bag Duffel,Apparel,67.04,28.08,2023-03-08,True,4.2,570,SupplierB
+P0043,Resistance Bands Set,Apparel,114.5,73.71,2023-04-24,True,5.0,966,SupplierC
+P0044,Cooling Towel Sport,Apparel,78.65,32.35,2023-01-17,True,3.4,250,SupplierD
+P0045,Reflective Vest Run,Apparel,81.65,47.24,2023-01-26,True,4.8,529,SupplierD
+P0046,Bamboo Cutting Board,Home & Garden,62.9,36.46,2023-06-22,True,3.3,404,SupplierB
+P0047,Stainless Measuring Cups,Home & Garden,89.48,55.55,2023-04-02,True,4.0,858,SupplierC
+P0048,Cast Iron Skillet 10in,Home & Garden,59.68,33.98,2023-05-05,True,4.7,309,SupplierD
+P0049,Herb Garden Kit,Home & Garden,29.73,18.71,2023-04-11,True,4.6,1008,SupplierD
+P0050,Compost Bin Counter,Home & Garden,70.73,48.41,2023-04-19,True,3.9,871,SupplierC
+P0051,Water Filter Pitcher,Home & Garden,36.71,24.69,2023-04-24,True,3.8,661,SupplierD
+P0052,Storage Ottoman,Home & Garden,46.01,27.39,2023-03-31,False,4.9,795,SupplierC
+P0053,Shower Curtain Set,Home & Garden,75.86,45.74,2023-02-27,True,4.0,1124,SupplierB
+P0054,Blackout Curtains Pair,Home & Garden,33.59,22.17,2023-04-27,True,4.1,708,SupplierC
+P0055,Non-Stick Pan Set,Home & Garden,57.58,30.06,2023-03-17,True,3.5,1114,SupplierA
+P0056,Vegetable Peeler Pro,Home & Garden,51.0,34.83,2023-02-16,False,4.7,1016,SupplierA
+P0057,Soap Dispenser Ceramic,Home & Garden,60.29,41.08,2023-06-25,True,3.8,361,SupplierC
+P0058,Towel Set 6-Piece,Home & Garden,30.37,14.18,2023-04-10,False,3.9,766,SupplierC
+P0059,Doormat Coir Natural,Home & Garden,62.32,30.55,2023-03-10,True,4.3,340,SupplierC
+P0060,Plant Pots Set 3,Home & Garden,93.29,45.47,2023-06-09,True,4.2,694,SupplierC
+P0061,Picture Hanging Kit,Home & Garden,72.16,42.61,2023-06-28,True,4.3,1196,SupplierB
+P0062,Drawer Organizer Set,Home & Garden,41.51,26.44,2023-01-12,True,3.2,503,SupplierB
+P0063,Candle Set Soy,Home & Garden,74.95,51.57,2023-01-08,True,4.4,1026,SupplierB
+P0064,Foam Roller Deep Tissue,Sports,74.66,46.36,2023-02-27,True,4.3,417,SupplierD
+P0065,Jump Rope Speed,Sports,129.55,71.36,2023-06-13,True,4.6,196,SupplierC
+P0066,Pull Up Bar Doorway,Sports,159.1,101.81,2023-04-06,True,4.9,41,SupplierD
+P0067,Ab Wheel Roller,Sports,94.13,52.98,2023-04-09,True,4.8,66,SupplierD
+P0068,Kettlebell 20lb,Sports,140.12,92.62,2023-01-19,True,3.2,80,SupplierA
+P0069,Yoga Mat Premium,Sports,81.44,42.14,2023-05-08,True,4.1,148,SupplierA
+P0070,Resistance Loop Bands,Sports,55.11,32.88,2023-06-29,True,4.6,1179,SupplierD
+P0071,Push Up Bars Handles,Sports,135.86,96.9,2023-02-11,True,5.0,638,SupplierA
+P0072,Weight Plate 10lb,Sports,129.78,79.1,2023-03-16,True,3.5,1102,SupplierB
+P0073,Balance Board Wobble,Sports,116.03,82.49,2023-01-07,True,3.6,950,SupplierC
+P0074,Agility Ladder 12ft,Sports,126.21,90.3,2023-06-14,True,4.2,504,SupplierA
+P0075,Dumbbell Set Adjustable,Sports,154.1,78.46,2023-05-12,True,4.5,449,SupplierD
+P0076,Boxing Gloves 12oz,Sports,109.11,69.53,2023-03-31,True,4.0,177,SupplierA
+P0077,Swim Goggles Anti-Fog,Sports,91.38,55.17,2023-05-28,True,3.4,1029,SupplierC
+P0078,Foam Roller Deep Tissue,Sports,112.0,57.64,2023-04-23,True,4.2,1145,SupplierB
+P0079,Vitamin C Serum 30ml,Beauty,69.42,20.29,2023-06-22,False,4.8,890,SupplierA
+P0080,Retinol Night Cream,Beauty,80.59,47.6,2023-05-27,True,4.1,1171,SupplierC
+P0081,Hyaluronic Acid Toner,Beauty,80.76,31.09,2023-01-03,True,3.3,1040,SupplierB
+P0082,SPF 50 Sunscreen,Beauty,78.1,25.09,2023-06-01,True,3.7,680,SupplierB
+P0083,Jade Face Roller,Beauty,45.21,24.38,2023-01-28,False,5.0,506,SupplierC
+P0084,Charcoal Face Mask,Beauty,53.86,27.62,2023-06-06,True,3.3,394,SupplierB
+P0085,Rose Hip Oil Pure,Beauty,46.87,19.84,2023-06-02,True,4.9,881,SupplierA
+P0086,Collagen Eye Patches,Beauty,24.04,11.8,2023-03-06,True,5.0,857,SupplierB
+P0087,Micellar Water 400ml,Beauty,44.78,13.21,2023-01-27,True,3.3,109,SupplierC
+P0088,Tea Tree Cleanser,Beauty,30.33,18.52,2023-02-24,True,4.7,775,SupplierA
+P0089,Peptide Eye Cream,Beauty,56.73,21.3,2023-03-24,True,4.0,5,SupplierC
+P0090,Niacinamide Serum,Beauty,38.57,21.08,2023-04-23,True,3.3,99,SupplierD
+P0091,Aloe Vera Gel,Beauty,23.8,10.72,2023-04-28,True,3.8,1082,SupplierD
+P0092,Exfoliating Scrub,Beauty,55.31,18.02,2023-02-26,True,4.1,923,SupplierC
+P0093,Lip Balm Set 5,Beauty,68.4,27.64,2023-03-16,True,3.4,768,SupplierB
+P0094,Makeup Remover Wipes,Beauty,43.01,18.08,2023-01-30,True,3.4,253,SupplierB
+P0095,Sheet Mask 10-Pack,Beauty,48.88,15.37,2023-01-30,True,4.8,137,SupplierA
+P0096,Brow Gel Clear,Beauty,31.1,9.62,2023-03-15,True,3.3,73,SupplierB
+P0097,Setting Spray Matte,Beauty,58.82,29.43,2023-05-06,True,3.6,115,SupplierA
+P0098,Gua Sha Stone,Beauty,49.42,20.86,2023-04-28,True,3.5,904,SupplierD
+P0099,Data Science Handbook,Books & Media,24.84,15.11,2023-06-04,True,3.5,638,SupplierC
+P0100,Python for Beginners,Books & Media,13.28,9.87,2023-04-02,True,3.3,842,SupplierA
+P0101,Marketing Strategy 2024,Books & Media,28.67,20.29,2023-02-15,True,4.1,1101,SupplierB
+P0102,Atomic Habits Journal,Books & Media,36.94,24.21,2023-02-25,True,4.9,341,SupplierB
+P0103,The E-Myth Revisited,Books & Media,39.09,29.7,2023-04-09,True,3.6,643,SupplierD
+P0104,Zero to One Paperback,Books & Media,27.12,17.82,2023-03-19,True,4.5,530,SupplierC
+P0105,Building a StoryBrand,Books & Media,19.88,12.7,2023-04-21,True,4.5,810,SupplierC
+P0106,Profit First Workbook,Books & Media,24.39,18.44,2023-04-29,True,3.2,90,SupplierB
+P0107,Never Split Difference,Books & Media,28.7,20.99,2023-01-13,True,4.4,71,SupplierA
+P0108,Good to Great Edition,Books & Media,27.55,20.92,2023-04-21,True,4.2,752,SupplierC
+P0109,Whey Protein Chocolate,Food & Grocery,31.76,23.73,2023-06-29,True,4.2,319,SupplierA
+P0110,Collagen Peptides 500g,Food & Grocery,29.74,19.25,2023-05-30,True,3.9,628,SupplierD
+P0111,Matcha Powder Organic,Food & Grocery,51.39,40.56,2023-04-04,True,4.8,763,SupplierC
+P0112,MCT Oil 32oz,Food & Grocery,37.82,27.8,2023-02-05,True,4.8,472,SupplierD
+P0113,Electrolyte Powder Mix,Food & Grocery,54.16,43.5,2023-04-28,True,3.5,951,SupplierB
+P0114,Mushroom Coffee Blend,Food & Grocery,54.66,38.84,2023-05-16,True,4.7,330,SupplierB
+P0115,Protein Bars Box 12,Food & Grocery,29.47,21.58,2023-01-20,True,3.4,94,SupplierB
+P0116,Omega-3 Fish Oil 90ct,Food & Grocery,28.01,19.78,2023-05-19,True,3.8,263,SupplierA
+P0117,Strategy Board Game,Toys & Games,47.04,28.74,2023-01-05,False,5.0,17,SupplierD
+P0118,STEM Robot Kit Kids,Toys & Games,74.54,49.11,2023-04-11,False,3.4,915,SupplierD
+P0119,Puzzle 1000 Pieces,Toys & Games,61.82,32.73,2023-04-05,True,4.7,240,SupplierB
+P0120,Card Game Family,Toys & Games,31.76,17.29,2023-05-17,True,3.9,517,SupplierD

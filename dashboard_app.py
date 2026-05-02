@@ -31,20 +31,18 @@ st.markdown("""
   --surface2:  #11131a;
   --border:    #1c1f2b;
   --amber:     #f5a623;
-  --amber-dim: rgba(245,166,35,0.12);
   --amber-glow:rgba(245,166,35,0.06);
   --green:     #2dd4a0;
   --red:       #f05252;
   --blue:      #4da6ff;
   --text:      #dde2ec;
   --muted:     #4a5268;
-  --muted2:    #2a2f40;
   --font-display: 'Bebas Neue', sans-serif;
   --font-serif:   'Lora', serif;
   --font-mono:    'JetBrains Mono', monospace;
 }
 
-/* ───────────────── BASE ───────────────── */
+/* ───────────── BASE ───────────── */
 html, body,
 [data-testid="stAppViewContainer"],
 [data-testid="stMain"] {
@@ -52,26 +50,26 @@ html, body,
     color: var(--text) !important;
 }
 
-/* remove faixa preta do topo sem quebrar sidebar */
+/* remove topo preto */
 header[data-testid="stHeader"] {
     background: transparent !important;
     height: 0rem !important;
 }
 
-/* esconde menu padrão */
+/* remove menu/footer */
 #MainMenu, footer {
     visibility: hidden;
 }
 
-/* container principal */
+/* conteúdo principal */
 .block-container {
-    padding: 1.5rem 2.5rem 2rem 2.5rem !important;
     max-width: 1440px !important;
+    padding: 1.25rem 2rem 2rem 2rem !important;
 }
 
-/* ───────────────── SIDEBAR ───────────────── */
+/* ───────────── SIDEBAR RESPONSIVA ───────────── */
 
-/* sidebar principal */
+/* sidebar visual */
 [data-testid="stSidebar"] {
     background: var(--surface) !important;
     border-right: 1px solid var(--border) !important;
@@ -83,7 +81,18 @@ header[data-testid="stHeader"] {
     padding-top: 1rem !important;
 }
 
-/* botão recolher/abrir */
+/* largura somente aberta */
+[data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
+    width: 320px !important;
+}
+
+/* quando fechada some de verdade */
+[data-testid="stSidebar"][aria-expanded="false"] > div:first-child {
+    width: 0 !important;
+    min-width: 0 !important;
+}
+
+/* botão sidebar */
 button[kind="header"],
 [data-testid="collapsedControl"] {
     background: var(--surface2) !important;
@@ -91,9 +100,8 @@ button[kind="header"],
     border-radius: 8px !important;
     color: var(--amber) !important;
     box-shadow: none !important;
-    top: 0.75rem !important;
-    left: 0.75rem !important;
-    opacity: 0.9 !important;
+    opacity: .9 !important;
+    z-index: 99999 !important;
 }
 
 button[kind="header"]:hover,
@@ -102,24 +110,13 @@ button[kind="header"]:hover,
     opacity: 1 !important;
 }
 
-/* evita botão escondido atrás header */
-[data-testid="collapsedControl"] {
-    z-index: 99999 !important;
-}
-
-/* largura sidebar */
-section[data-testid="stSidebar"] {
-    min-width: 320px !important;
-    max-width: 320px !important;
-}
-
-/* ───────────────── METRICS ───────────────── */
+/* ───────────── METRICS ───────────── */
 [data-testid="metric-container"] {
     background: var(--surface2) !important;
     border: 1px solid var(--border) !important;
     border-top: 2px solid var(--amber) !important;
-    border-radius: 4px 4px 8px 8px !important;
-    padding: 1.2rem 1.4rem !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
 }
 
 [data-testid="metric-container"]:hover {
@@ -138,9 +135,10 @@ section[data-testid="stSidebar"] {
     font-family: var(--font-display) !important;
     font-size: 32px !important;
     color: var(--text) !important;
+    line-height: 1 !important;
 }
 
-/* ───────────────── INPUTS ───────────────── */
+/* ───────────── INPUTS ───────────── */
 [data-testid="stSelectbox"] > div > div,
 [data-testid="stDateInput"] input,
 .stTextInput input {
@@ -152,17 +150,19 @@ section[data-testid="stSidebar"] {
     font-size: 12px !important;
 }
 
-/* ───────────────── TABS ───────────────── */
+/* ───────────── TABS ───────────── */
 [data-testid="stTabs"] [data-baseweb="tab-list"] {
     border-bottom: 1px solid var(--border) !important;
+    gap: .25rem !important;
 }
 
 [data-testid="stTabs"] [data-baseweb="tab"] {
     font-family: var(--font-mono) !important;
     font-size: 11px !important;
-    letter-spacing: 1.5px !important;
+    letter-spacing: 1px !important;
     text-transform: uppercase !important;
     color: var(--muted) !important;
+    padding: .75rem 1rem !important;
 }
 
 [data-testid="stTabs"] [aria-selected="true"] {
@@ -170,13 +170,54 @@ section[data-testid="stSidebar"] {
     border-bottom: 2px solid var(--amber) !important;
 }
 
-/* scrollbar sidebar */
+/* ───────────── SCROLLBAR ───────────── */
 section[data-testid="stSidebar"] ::-webkit-scrollbar {
     width: 6px;
 }
 section[data-testid="stSidebar"] ::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 10px;
+}
+
+/* ───────────── TABLET ───────────── */
+@media (max-width: 1024px) {
+    .block-container {
+        padding: 1rem 1rem 2rem 1rem !important;
+    }
+
+    [data-testid="metric-container"] {
+        padding: .8rem !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 26px !important;
+    }
+}
+
+/* ───────────── MOBILE ───────────── */
+@media (max-width: 768px) {
+
+    .block-container {
+        padding: .75rem .75rem 2rem .75rem !important;
+    }
+
+    /* sidebar ocupa tela toda ao abrir */
+    [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
+        width: 88vw !important;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 22px !important;
+    }
+
+    [data-testid="stMetricLabel"] {
+        font-size: 9px !important;
+    }
+
+    [data-testid="stTabs"] [data-baseweb="tab"] {
+        font-size: 10px !important;
+        padding: .6rem .5rem !important;
+    }
 }
 </style>
 """, unsafe_allow_html=True)

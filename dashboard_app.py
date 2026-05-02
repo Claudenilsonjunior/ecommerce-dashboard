@@ -228,13 +228,6 @@ hr { border-color: var(--border) !important; }
     padding-bottom: 16px;
     margin-bottom: 24px;
 }
-
-[data-testid="collapsedControl"] {
-    opacity: 0.25 !important;
-}
-[data-testid="collapsedControl"]:hover {
-    opacity: 1 !important;
-}
 </style>
 """, unsafe_allow_html=True)
 

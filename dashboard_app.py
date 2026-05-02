@@ -64,12 +64,7 @@ html, body,
 .block-container { padding: 2rem 2.5rem !important; max-width: 1440px !important; }
 
 /* ── Sidebar toggle button ── */
-[data-testid="collapsedControl"] {
-    background: var(--surface) !important;
-    border: 1px solid var(--border) !important;
-    color: var(--amber) !important;
-    border-radius: 0 8px 8px 0 !important;
-}
+
 
 /* ── Metrics ── */
 [data-testid="metric-container"] {

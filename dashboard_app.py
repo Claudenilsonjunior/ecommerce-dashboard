@@ -231,7 +231,10 @@ hr { border-color: var(--border) !important; }
 }
 
 [data-testid="collapsedControl"] {
-    display: none !important;
+    opacity: 0.25 !important;
+}
+[data-testid="collapsedControl"]:hover {
+    opacity: 1 !important;
 }
 </style>
 """, unsafe_allow_html=True)

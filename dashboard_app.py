@@ -56,7 +56,11 @@ html, body,
     border-right: 1px solid var(--border) !important;
 }
 #MainMenu, footer { visibility: hidden; }
-[data-testid="stToolbar"] { display: none; }
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+    height: 0px !important;
+    position: fixed !important;
+}
 .block-container { padding: 2rem 2.5rem !important; max-width: 1440px !important; }
 
 /* ── Sidebar toggle button ── */

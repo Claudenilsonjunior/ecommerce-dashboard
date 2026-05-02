@@ -44,41 +44,88 @@ st.markdown("""
   --font-mono:    'JetBrains Mono', monospace;
 }
 
-/* ── Base ── */
+/* ───────────────── BASE ───────────────── */
 html, body,
 [data-testid="stAppViewContainer"],
 [data-testid="stMain"] {
     background: var(--bg) !important;
     color: var(--text) !important;
 }
+
+/* remove faixa preta do topo sem quebrar sidebar */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    height: 0rem !important;
+}
+
+/* esconde menu padrão */
+#MainMenu, footer {
+    visibility: hidden;
+}
+
+/* container principal */
+.block-container {
+    padding: 1.5rem 2.5rem 2rem 2.5rem !important;
+    max-width: 1440px !important;
+}
+
+/* ───────────────── SIDEBAR ───────────────── */
+
+/* sidebar principal */
 [data-testid="stSidebar"] {
     background: var(--surface) !important;
     border-right: 1px solid var(--border) !important;
 }
-#MainMenu, footer { visibility: hidden; }
-[data-testid="stToolbar"] {
-    visibility: hidden !important;
-    height: 0px !important;
-    position: fixed !important;
+
+/* conteúdo interno */
+[data-testid="stSidebarContent"] {
+    background: var(--surface) !important;
+    padding-top: 1rem !important;
 }
-.block-container { padding: 2rem 2.5rem !important; max-width: 1440px !important; }
 
-/* ── Sidebar toggle button ── */
+/* botão recolher/abrir */
+button[kind="header"],
+[data-testid="collapsedControl"] {
+    background: var(--surface2) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--amber) !important;
+    box-shadow: none !important;
+    top: 0.75rem !important;
+    left: 0.75rem !important;
+    opacity: 0.9 !important;
+}
 
+button[kind="header"]:hover,
+[data-testid="collapsedControl"]:hover {
+    border-color: var(--amber) !important;
+    opacity: 1 !important;
+}
 
-/* ── Metrics ── */
+/* evita botão escondido atrás header */
+[data-testid="collapsedControl"] {
+    z-index: 99999 !important;
+}
+
+/* largura sidebar */
+section[data-testid="stSidebar"] {
+    min-width: 320px !important;
+    max-width: 320px !important;
+}
+
+/* ───────────────── METRICS ───────────────── */
 [data-testid="metric-container"] {
     background: var(--surface2) !important;
     border: 1px solid var(--border) !important;
     border-top: 2px solid var(--amber) !important;
     border-radius: 4px 4px 8px 8px !important;
     padding: 1.2rem 1.4rem !important;
-    transition: border-color .2s;
 }
+
 [data-testid="metric-container"]:hover {
-    border-top-color: var(--amber) !important;
     background: var(--amber-glow) !important;
 }
+
 [data-testid="stMetricLabel"] {
     font-family: var(--font-mono) !important;
     font-size: 10px !important;
@@ -86,42 +133,14 @@ html, body,
     text-transform: uppercase !important;
     color: var(--muted) !important;
 }
+
 [data-testid="stMetricValue"] {
     font-family: var(--font-display) !important;
     font-size: 32px !important;
-    letter-spacing: 1px !important;
     color: var(--text) !important;
-    line-height: 1.1 !important;
-}
-[data-testid="stMetricDelta"] {
-    font-family: var(--font-mono) !important;
-    font-size: 11px !important;
 }
 
-/* ── Tabs ── */
-[data-testid="stTabs"] [data-baseweb="tab-list"] {
-    background: transparent !important;
-    border-bottom: 1px solid var(--border) !important;
-    gap: 0 !important;
-    padding: 0 !important;
-}
-[data-testid="stTabs"] [data-baseweb="tab"] {
-    font-family: var(--font-mono) !important;
-    font-size: 11px !important;
-    letter-spacing: 1.5px !important;
-    text-transform: uppercase !important;
-    color: var(--muted) !important;
-    border-radius: 0 !important;
-    padding: 10px 20px !important;
-    border-bottom: 2px solid transparent !important;
-}
-[data-testid="stTabs"] [aria-selected="true"] {
-    color: var(--amber) !important;
-    border-bottom-color: var(--amber) !important;
-    background: transparent !important;
-}
-
-/* ── Inputs / Selects ── */
+/* ───────────────── INPUTS ───────────────── */
 [data-testid="stSelectbox"] > div > div,
 [data-testid="stDateInput"] input,
 .stTextInput input {
@@ -133,100 +152,31 @@ html, body,
     font-size: 12px !important;
 }
 
-/* ── Dividers ── */
-hr { border-color: var(--border) !important; }
+/* ───────────────── TABS ───────────────── */
+[data-testid="stTabs"] [data-baseweb="tab-list"] {
+    border-bottom: 1px solid var(--border) !important;
+}
 
-/* ── Custom classes ── */
-.section-eyebrow {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 6px;
+[data-testid="stTabs"] [data-baseweb="tab"] {
+    font-family: var(--font-mono) !important;
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    color: var(--muted) !important;
 }
-.section-title {
-    font-family: var(--font-display);
-    font-size: 26px;
-    letter-spacing: 2px;
-    color: var(--text);
-    margin-bottom: 4px;
-    line-height: 1;
+
+[data-testid="stTabs"] [aria-selected="true"] {
+    color: var(--amber) !important;
+    border-bottom: 2px solid var(--amber) !important;
 }
-.chart-label {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border);
+
+/* scrollbar sidebar */
+section[data-testid="stSidebar"] ::-webkit-scrollbar {
+    width: 6px;
 }
-.insight-card {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--amber);
-    border-radius: 2px 8px 8px 2px;
-    padding: 14px 18px;
-    margin-bottom: 10px;
-}
-.insight-type {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 6px;
-}
-.insight-text {
-    font-family: var(--font-serif);
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--text);
-}
-.insight-text strong { color: var(--amber); font-style: italic; }
-.kpi-delta-up   { color: var(--green); font-family: var(--font-mono); font-size: 11px; }
-.kpi-delta-down { color: var(--red);   font-family: var(--font-mono); font-size: 11px; }
-.logo-mark { 
-    font-family: var(--font-display);
-    font-size: 28px;
-    letter-spacing: 3px;
-    color: var(--text);
-    line-height: 1;
-}
-.logo-sub {
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 3px;
-    color: var(--muted);
-    text-transform: uppercase;
-}
-.anomaly-pill-up {
-    display:inline-block;
-    background: rgba(45,212,160,0.12);
-    border: 1px solid rgba(45,212,160,0.3);
-    color: var(--green);
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    font-weight: 500;
-}
-.anomaly-pill-down {
-    display:inline-block;
-    background: rgba(240,82,82,0.12);
-    border: 1px solid rgba(240,82,82,0.3);
-    color: var(--red);
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-family: var(--font-mono);
-    font-size: 10px;
-}
-.page-header {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 16px;
-    margin-bottom: 24px;
+section[data-testid="stSidebar"] ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
